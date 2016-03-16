@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+set -o xtrace
+
+sed -i 's/#master: salt/master: salt.eco.seecrypt.net/' /etc/salt/minion

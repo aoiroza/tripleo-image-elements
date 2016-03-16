@@ -4,5 +4,7 @@
 set -e
 set -o xtrace
 
-add-apt-repository -y ppa:saltstack/salt
-
+install-packages python-software-properties software-properties-common
+apt-key add saltstack/SALTSTACK-GPG-KEY.pub
+add-apt-repository -y 'deb http://repo.saltstack.com/apt/debian/latest jessie main'
+apt-get update

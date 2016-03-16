@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+set -o xtrace
+
+sudo mkdir -p "$TMP_MOUNT_PATH"/saltstack
+sudo cp $(dirname $0)/SALTSTACK-GPG-KEY.pub "$TMP_MOUNT_PATH"/saltstack

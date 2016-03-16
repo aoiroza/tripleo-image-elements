@@ -1,0 +1,7 @@
+#!/bin/bash
+# Add the salt PPA
+
+set -e
+set -o xtrace
+
+sudo rm -rf "$TMP_MOUNT_PATH"/saltstack
